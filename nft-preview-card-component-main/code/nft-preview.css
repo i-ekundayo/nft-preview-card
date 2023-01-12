@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(217, 54%, 11%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.nftCard{
+    background-color: hsl(216, 50%, 16%);
+    width: 40%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 20px;
+    display: grid;
+    grid-gap: 20px;
+    box-shadow: 0px 20px 50px  hsla(0, 0%, 0%, 0.5);
+}
+.nftCardImage{
+    background-image: url('../images/image-equilibrium.jpg');
+    background-size: 100% 100%;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+.nftCardImage:hover{
+    cursor: pointer;
+}
+.nftHoverColor{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsla(178, 100%, 50%, 0.5);
+}
+.nftHoverColor:hover{
+    opacity: 1;
+}
+.equilibrium{
+    color: hsl(0, 0%, 100%);
+}
+.equilibrium:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.text p{
+    color: hsl(215, 51%, 70%);
+}
+.ethereumClock{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 15px;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+.ethereumClock img{
+    margin-right: 5px;
+}
+.ethereum, .clock{
+    display: flex;
+}
+.ethereum p{
+    color: hsl(178, 100%, 50%);
+}
+.profile{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.profile img{
+    height: 30px;
+    width: 30px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.profileName{
+    display: flex;
+    flex-shrink: 0;
+}
+.creation{
+    color: hsl(215, 51%, 70%);
+    margin-right: 7px;    
+}
+.name{
+    color: hsl(0, 0%, 100%);
+}
+.name:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+@media (max-width:600px){
+    .nftCard{
+        width: 80%;
+    }
+}
